@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js"></script>
+    <title>Converter</title>
+</head>
+<body>
+    <div class="main-container">
+    <input class="input-from ip" type="number" name=""  step="any" id="data" /> 
+    <div class="from">
+        <label class="option" for="option_from">Select the type of temperature from:</label>
+        <select id="option_from" name="select-where" required>
+          <option class="option" value="Choose the Temperature">Choose the Temperature</option>
+          <option class="from-c option" value="Celcius">Celcius</option>
+          <option class="from-f option" value="Fahrenheit">Fahrenheit</option>
+        </select>
+      </div>
+      
+      <div class="to">
+        <label class="option" for="option_to">Select the type of temperature to:</label>
+        <select id="option_to" name="select-where" required>
+          <option class="option" value="Choose the Temperature">Choose the Temperature</option>
+          <option class="to-c option" value="Celcius">Celcius</option>
+          <option class="to-f option" value="Fahrenheit">Fahrenheit</option>
+        </select>
+      </div>
+    <button class="btn" onclick="convert()" type="button">Convert</button> 
+    <h1 id="result"></h1> 
+</div>
+</body>
+</html>
